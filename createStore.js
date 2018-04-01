@@ -222,7 +222,7 @@ export default function createStore(reducer, preloadedState, enhancer) {
      * For more information, see the observable proposal:
      * https://github.com/tc39/proposal-observable
      */
-    function observable() {
+    function observable() { // 不直接暴露给开发者，提供给其它观察者模式库或者响应式库的可交互操作的入口点
         const outerSubscribe = subscribe
         return {
             /**

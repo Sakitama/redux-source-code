@@ -2,14 +2,14 @@
 Redux 源码解析
 
 ## 源码结构
-.src
-├── utils   
-    ├── actionTypes.js  
-    ├── isPlainObject.js
-    ├── warning.js         
-├── applyMiddleware.js
-├── bindActionCreators.js        
-├── combineReducers.js     
-├── compose.js       
+.src  
+├── utils  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── actionTypes.js  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── isPlainObject.js  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── warning.js  
+├── applyMiddleware.js  
+├── bindActionCreators.js  
+├── combineReducers.js  
+├── compose.js  
 ├── createStore.js  
-└── index.js             
+└── index.js

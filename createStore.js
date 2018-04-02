@@ -28,7 +28,7 @@ import isPlainObject from './utils/isPlainObject'
  * @returns {Store} A Redux store that lets you read the state, dispatch actions
  * and subscribe to changes.
  */
-export default function createStore(reducer, preloadedState, enhancer) {
+export default function createStore(reducer, preloadedState, enhancer) { // 这里的 enhancer 是通过调用 applyMiddleware(...) 而来
     if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
         enhancer = preloadedState
         preloadedState = undefined

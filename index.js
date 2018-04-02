@@ -10,7 +10,7 @@ import __DO_NOT_USE__ActionTypes from './utils/actionTypes'
  * This is a dummy function to check if the function name has been altered by minification.
  * If the function has been minified and NODE_ENV !== 'production', warn the user.
  */
-function isCrushed() {} // 这里的 isCrushed 函数主要是为了验证在非生产环境下 Redux 是否被压缩，因为如果被压缩了那么 isCrushed.name !== 'isCrushed' 就是 true，如果被压缩会给开发者一个 warn 提示。
+function isCrushed() {} // 这里的 isCrushed 函数主要是为了验证在非生产环境下 Redux 是否被压缩，因为如果被压缩了那么 isCrushed.name !== 'isCrushed' 就是 true，如果被压缩会给开发者一个 warn 提示
 
 if (
     process.env.NODE_ENV !== 'production' &&

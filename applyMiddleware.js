@@ -36,7 +36,7 @@ export default function applyMiddleware(...middlewares) { //
 
         return {
             ...store,
-            dispatch
+            dispatch // 覆盖了 store 中原有的 dispatch
         }
     }
 }

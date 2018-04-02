@@ -29,7 +29,7 @@ import isPlainObject from './utils/isPlainObject'
  * and subscribe to changes.
  */
 export default function createStore(reducer, preloadedState, enhancer) { // 这里的 enhancer 是通过调用 applyMiddleware(...) 而来
-    if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
+    if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') { // 如果只传入两个参数的情况下，一个 reducer 和 applyMiddleware(...) 返回的 enhancer，此时 preloadedState 保存 enhancer，为了之后的使用，让它们保存各自正确的值
         enhancer = preloadedState
         preloadedState = undefined
     }
